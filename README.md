@@ -14,7 +14,8 @@ If the top scoring intent is a special intent called "qna", it triggers a new di
 ## How to use
 
 **1. Create your js bot locally** 
-Quickstart [here](https://docs.microsoft.com/en-us/azure/bot-service/javascript/bot-builder-javascript-quickstart?view=azure-bot-service-4.0))
+
+Quickstart [here](https://docs.microsoft.com/en-us/azure/bot-service/javascript/bot-builder-javascript-quickstart?view=azure-bot-service-4.0)
 
 **2. Create your LUIS service [here](https://www.luis.ai/) ([here](https://eu.luis.ai/) for West Europe and [here](https://au.luis.ai/) for Australia) and add intents**
 
