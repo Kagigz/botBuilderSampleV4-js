@@ -94,9 +94,9 @@ Your .bot file should now look like this:
 }
 ```
 
-**8. Install botbuilder-ai by running**
+**8. Install botbuilder-ai and botbuilder-dialogs by running**
 ```bash
-npm install --save botbuilder-ai
+npm install --save botbuilder-ai botbuilder-dialogs
 ```
 
 **9. Replace your bot.js and index.js files with the ones in this repo**
