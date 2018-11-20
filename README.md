@@ -13,18 +13,20 @@ If the top scoring intent is a special intent called "qna", it triggers a new di
 
 ## How to use
 
-1. Create your js bot locally (quickstart [here](https://docs.microsoft.com/en-us/azure/bot-service/javascript/bot-builder-javascript-quickstart?view=azure-bot-service-4.0))
+**1. Create your js bot locally** 
+Quickstart [here](https://docs.microsoft.com/en-us/azure/bot-service/javascript/bot-builder-javascript-quickstart?view=azure-bot-service-4.0))
 
-2. Create your LUIS service [here](https://www.luis.ai/) ([here](https://eu.luis.ai/) for West Europe and [here](https://au.luis.ai/) for Australia) and add intents
+**2. Create your LUIS service [here](https://www.luis.ai/) ([here](https://eu.luis.ai/) for West Europe and [here](https://au.luis.ai/) for Australia) and add intents**
+
 /!\ If you want to test this sample _as is_, make sure you create an intent called "qna" with example utterances such as "qnamaker" to invoke QnA Maker
 
-3. Create your QnA Maker service [here](https://www.qnamaker.ai/) and populate your Knowledge Base
+**3. Create your QnA Maker service [here](https://www.qnamaker.ai/) and populate your Knowledge Base**
 
-4. In your bot's folder, run
+**4. In your bot's folder, run**
 ```bash
 npm install luis qnamaker msbot
 ```
-5. Connect to your LUIS service by running
+**5. Connect to your LUIS service by running**
 ```bash
 luis init
 ```
@@ -32,7 +34,7 @@ You will be prompted for your settings that you can find on the LUIS portal, in 
 - _Application ID_ is in _Application Information_
 - _Authoring key_ and _API key_ (Key 1 or Key 2) are in _Keys and Enpoints_
 
-6. Connect to your QnA Maker service by running
+**6. Connect to your QnA Maker service by running**
 ```bash
 qnamaker init
 ```
@@ -46,7 +48,7 @@ Content-Type: application/json
 {"question":"<Your question>"}
 ```
 
-7. Update your .bot file by running
+**7. Update your .bot file by running**
 ```bash
 luis get application --appId <your-app-id> --msbot | msbot connect luis --stdin
 qnamaker get kb --kbId <your-kb-id> --msbot | msbot connect qna --stdin
@@ -91,14 +93,14 @@ Your .bot file should now look like this:
 }
 ```
 
-8. Install botbuilder-ai by running
+**8. Install botbuilder-ai by running**
 ```bash
 npm install --save botbuilder-ai
 ```
 
-9. Replace your bot.js and index.js files with the ones in this repo
+**9. Replace your bot.js and index.js files with the ones in this repo**
 
-**You can now use either LUIS, QnA Maker and/or the Dialogs library however you wish.**
+### You can now use either LUIS, QnA Maker and/or the Dialogs library however you wish. 
 
 
 
